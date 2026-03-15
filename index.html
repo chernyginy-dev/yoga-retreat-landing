@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bali Yoga Retreat — Reconnect with your body, breath and nature in a peaceful tropical sanctuary."
+    />
+    <title>Bali Yoga Retreat</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+    <header class="site-header" id="site-header" role="banner">
+      <div class="container nav">
+        <a href="#hero" class="nav__logo" aria-label="Bali Yoga Retreat home">
+          <span class="nav__logo-leaf" aria-hidden="true">✦</span>
+          Bali Yoga Retreat
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul class="nav__list" id="nav-menu" role="list">
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#practices" class="nav__link">Practices</a></li>
+            <li><a href="#daily" class="nav__link">Your Day</a></li>
+            <li><a href="#location" class="nav__link">Location</a></li>
+            <li><a href="#gallery" class="nav__link">Gallery</a></li>
+            <li>
+              <a href="#book" class="nav__link nav__link--cta">Book Now</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ═══════════════════════════════════════
+         1. HERO
+    ═══════════════════════════════════════ -->
+      <section class="hero" id="hero" aria-label="Welcome">
+        <div class="hero__bg">
+          <img
+            src="assets/hero.jpg"
+            alt="Sunrise yoga practice surrounded by Bali's lush tropical jungle"
+            class="hero__bg-img"
+            fetchpriority="high"
+          />
+          <div class="hero__overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="container hero__inner">
+          <p class="hero__eyebrow reveal">Ubud, Bali · Indonesia</p>
+          <h1 class="hero__title reveal">
+            Bali Yoga<br />
+            <em>Retreat</em>
+          </h1>
+          <p class="hero__subtitle reveal">
+            Reconnect with your body, breath and nature
+          </p>
+          <p class="hero__description reveal">
+            Immerse yourself in seven transformative days of yoga, meditation,
+            and mindful living — cradled by Bali's ancient jungle, warm ocean
+            breeze, and the quiet wisdom of the island itself.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#book" class="btn btn--primary">Book Your Retreat</a>
+            <a href="#practices" class="btn btn--outline-light"
+              >Explore Practices</a
+            >
+          </div>
+        </div>
+
+        <a
+          href="#about"
+          class="hero__scroll-hint"
+          aria-label="Scroll to next section"
+        >
+          <span class="scroll-line" aria-hidden="true"></span>
+          <span class="scroll-label">scroll</span>
+        </a>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         2. ABOUT
+    ═══════════════════════════════════════ -->
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="container about__inner">
+          <div class="about__text">
+            <span class="section__label reveal">About the retreat</span>
+            <h2 class="section__title reveal" id="about-title">
+              A space to slow down<br />
+              <em>and come home to yourself</em>
+            </h2>
+            <p class="about__lead reveal">
+              At our Bali Yoga Retreat, we believe that healing begins in
+              stillness. Nestled within a private jungle estate in Ubud, each
+              day is designed to gently return you to your body, your breath,
+              and your natural state of ease.
+            </p>
+            <p class="about__body reveal">
+              Through carefully woven yoga practices, guided meditation,
+              conscious breathwork, and nourishing Balinese cuisine, you will
+              rediscover what it means to live fully in the present moment. This
+              is not a fitness programme — it is an invitation to heal.
+            </p>
+
+            <ul class="about__pillars reveal" role="list">
+              <li class="pillar">
+                <span class="pillar__icon" aria-hidden="true">◌</span>
+                <span>Body awareness</span>
+              </li>
+              <li class="pillar">
+                <span class="pillar__icon" aria-hidden="true">◌</span>
+                <span>Mindfulness &amp; presence</span>
+              </li>
+              <li class="pillar">
+                <span class="pillar__icon" aria-hidden="true">◌</span>
+                <span>Healthy conscious living</span>
+              </li>
+              <li class="pillar">
+                <span class="pillar__icon" aria-hidden="true">◌</span>
+                <span>Connection with nature</span>
+              </li>
+            </ul>
+          </div>
+
+          <figure class="about__image-wrap reveal">
+            <img
+              src="assets/about.jpg"
+              alt="Practitioner in a serene yoga pose surrounded by tropical greenery"
+              class="about__image"
+              loading="lazy"
+            />
+            <figcaption class="about__caption">
+              Ubud, Bali — our jungle sanctuary
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         3. PRACTICES / ACTIVITIES
+    ═══════════════════════════════════════ -->
+      <section
+        class="practices section"
+        id="practices"
+        aria-labelledby="practices-title"
+      >
+        <div class="container">
+          <header class="section__header reveal">
+            <span class="section__label">What we offer</span>
+            <h2 class="section__title" id="practices-title">
+              Nourishing practices<br />
+              <em>for body &amp; soul</em>
+            </h2>
+            <p class="section__desc">
+              Every activity is chosen to restore, awaken, and inspire — held by
+              experienced guides who honour both ancient tradition and modern
+              understanding.
+            </p>
+          </header>
+
+          <ul class="practices__grid" role="list">
+            <li class="practice-card reveal">
+              <figure class="practice-card__img-wrap">
+                <img
+                  src="assets/yoga.jpg"
+                  alt="Morning yoga session at sunrise"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="practice-card__body">
+                <span class="practice-card__icon" aria-hidden="true">🌅</span>
+                <h3 class="practice-card__title">Morning Yoga</h3>
+                <p class="practice-card__desc">
+                  Begin each day with a grounding vinyasa or yin practice as the
+                  jungle wakes around you.
+                </p>
+              </div>
+            </li>
+
+            <li class="practice-card reveal">
+              <figure class="practice-card__img-wrap">
+                <img
+                  src="assets/meditation.jpg"
+                  alt="Guided meditation in a Balinese garden"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="practice-card__body">
+                <span class="practice-card__icon" aria-hidden="true">🧘</span>
+                <h3 class="practice-card__title">Meditation</h3>
+                <p class="practice-card__desc">
+                  Daily guided sessions to cultivate stillness, clarity, and a
+                  quiet mind amid the tropics.
+                </p>
+              </div>
+            </li>
+
+            <li class="practice-card reveal">
+              <figure class="practice-card__img-wrap">
+                <img
+                  src="assets/villa.jpg"
+                  alt="Breathwork session in an open-air pavilion"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="practice-card__body">
+                <span class="practice-card__icon" aria-hidden="true">💨</span>
+                <h3 class="practice-card__title">Breathwork</h3>
+                <p class="practice-card__desc">
+                  Pranayama and conscious breathing techniques to reset your
+                  nervous system and awaken vitality.
+                </p>
+              </div>
+            </li>
+
+            <li class="practice-card reveal">
+              <figure class="practice-card__img-wrap">
+                <img
+                  src="assets/yoga-02.jpg"
+                  alt="Sound healing ceremony with singing bowls"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="practice-card__body">
+                <span class="practice-card__icon" aria-hidden="true">🔔</span>
+                <h3 class="practice-card__title">Sound Healing</h3>
+                <p class="practice-card__desc">
+                  Balinese singing bowls and gong baths to guide you into deep
+                  relaxation and inner stillness.
+                </p>
+              </div>
+            </li>
+
+            <li class="practice-card reveal">
+              <figure class="practice-card__img-wrap">
+                <img
+                  src="assets/waterfall.jpg"
+                  alt="Sacred waterfall excursion in the jungle"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="practice-card__body">
+                <span class="practice-card__icon" aria-hidden="true">🌊</span>
+                <h3 class="practice-card__title">Waterfall Trips</h3>
+                <p class="practice-card__desc">
+                  Journey through the jungle to hidden sacred waterfalls for
+                  natural immersion and spiritual cleansing.
+                </p>
+              </div>
+            </li>
+
+            <li class="practice-card reveal">
+              <figure class="practice-card__img-wrap">
+                <img
+                  src="assets/yoga-03.jpg"
+                  alt="Sunset beach yoga on Bali's coastline"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="practice-card__body">
+                <span class="practice-card__icon" aria-hidden="true">🌇</span>
+                <h3 class="practice-card__title">Sunset Beach Yoga</h3>
+                <p class="practice-card__desc">
+                  Flow with the rhythm of the tides as golden light fills the
+                  horizon — a practice you will never forget.
+                </p>
+              </div>
+            </li>
+
+            <li class="practice-card reveal">
+              <figure class="practice-card__img-wrap">
+                <img
+                  src="assets/yoga-04.jpg"
+                  alt="Nourishing plant-based meals at the retreat"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="practice-card__body">
+                <span class="practice-card__icon" aria-hidden="true">🥥</span>
+                <h3 class="practice-card__title">Healthy Food</h3>
+                <p class="practice-card__desc">
+                  Lovingly prepared plant-based Balinese cuisine using local
+                  organic ingredients to nourish from within.
+                </p>
+              </div>
+            </li>
+
+            <li class="practice-card reveal">
+              <figure class="practice-card__img-wrap">
+                <img
+                  src="assets/yoga-05.jpg"
+                  alt="Body awareness movement session in open pavilion"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="practice-card__body">
+                <span class="practice-card__icon" aria-hidden="true">✶</span>
+                <h3 class="practice-card__title">Body Awareness</h3>
+                <p class="practice-card__desc">
+                  Somatic movement and embodiment practices to help you
+                  reconnect deeply with your physical self.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         4. DAILY EXPERIENCE
+    ═══════════════════════════════════════ -->
+      <section class="daily section" id="daily" aria-labelledby="daily-title">
+        <div class="container">
+          <header
+            class="section__header reveal"
+            style="margin-inline: auto; text-align: center; max-width: 580px"
+          >
+            <span class="section__label">A day in paradise</span>
+            <h2 class="section__title" id="daily-title">
+              Your daily rhythm<br />
+              <em>gentle and restorative</em>
+            </h2>
+          </header>
+
+          <ol class="timeline" role="list">
+            <li class="timeline__item reveal">
+              <div class="timeline__time">
+                <span class="time-badge">06:00</span>
+              </div>
+              <div class="timeline__connector" aria-hidden="true">
+                <span class="connector__dot"></span>
+                <span class="connector__line"></span>
+              </div>
+              <div class="timeline__card">
+                <span class="timeline__icon" aria-hidden="true">🌅</span>
+                <h3 class="timeline__title">Morning Yoga</h3>
+                <p class="timeline__desc">
+                  Wake gently with the jungle. An open-air session of vinyasa
+                  flow, breathwork, or yin — set to birdsong and rising mist.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item reveal">
+              <div class="timeline__time">
+                <span class="time-badge">08:00</span>
+              </div>
+              <div class="timeline__connector" aria-hidden="true">
+                <span class="connector__dot"></span>
+                <span class="connector__line"></span>
+              </div>
+              <div class="timeline__card">
+                <span class="timeline__icon" aria-hidden="true">🥣</span>
+                <h3 class="timeline__title">Nourishing Breakfast</h3>
+                <p class="timeline__desc">
+                  Fresh tropical fruits, warm porridge, cold-pressed juices, and
+                  Balinese herbal teas served on the open terrace.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item reveal">
+              <div class="timeline__time">
+                <span class="time-badge">10:00</span>
+              </div>
+              <div class="timeline__connector" aria-hidden="true">
+                <span class="connector__dot"></span>
+                <span class="connector__line"></span>
+              </div>
+              <div class="timeline__card">
+                <span class="timeline__icon" aria-hidden="true">🌿</span>
+                <h3 class="timeline__title">Free Time &amp; Exploration</h3>
+                <p class="timeline__desc">
+                  Rice field walks, traditional spa treatments, waterfall
+                  journeys, reading in a hammock, or simply being still.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item reveal">
+              <div class="timeline__time">
+                <span class="time-badge">17:00</span>
+              </div>
+              <div class="timeline__connector" aria-hidden="true">
+                <span class="connector__dot"></span>
+                <span class="connector__line"></span>
+              </div>
+              <div class="timeline__card">
+                <span class="timeline__icon" aria-hidden="true">🔔</span>
+                <h3 class="timeline__title">Evening Practice</h3>
+                <p class="timeline__desc">
+                  A restorative session — meditation, sound healing, or sunset
+                  beach yoga — to release the day and arrive in stillness.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item reveal">
+              <div class="timeline__time">
+                <span class="time-badge">19:30</span>
+              </div>
+              <div class="timeline__connector" aria-hidden="true">
+                <span class="connector__dot"></span>
+                <span class="connector__line last"></span>
+              </div>
+              <div class="timeline__card">
+                <span class="timeline__icon" aria-hidden="true">🌙</span>
+                <h3 class="timeline__title">Dinner &amp; Relaxation</h3>
+                <p class="timeline__desc">
+                  A candlelit plant-based dinner, followed by open conversation,
+                  stargazing, or peaceful solitude beneath the Balinese sky.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         5. LOCATION
+    ═══════════════════════════════════════ -->
+      <section
+        class="location section"
+        id="location"
+        aria-labelledby="location-title"
+      >
+        <div class="container location__inner">
+          <figure class="location__photo reveal">
+            <img
+              src="assets/hero.jpg"
+              alt="Panoramic view of the retreat villa surrounded by rice terraces and jungle"
+              loading="lazy"
+            />
+            <div class="location__photo-badge" aria-hidden="true">
+              <span>✦</span>
+              Ubud, Bali
+            </div>
+          </figure>
+
+          <div class="location__text">
+            <span class="section__label reveal">Where we are</span>
+            <h2 class="section__title reveal" id="location-title">
+              Tucked into<br />
+              <em>Bali's green heart</em>
+            </h2>
+            <p class="location__body reveal">
+              Our retreat is nestled in the verdant hills of Ubud — Bali's
+              spiritual and artistic soul. Surrounded by ancient rice terraces,
+              whispering bamboo groves, and the sacred Ayung River valley, the
+              estate feels worlds away from ordinary life.
+            </p>
+            <ul class="location__features reveal" role="list">
+              <li class="loc-feature">
+                <span class="loc-feature__icon" aria-hidden="true">🌴</span>
+                <div>
+                  <strong>Tropical jungle estate</strong>
+                  <span
+                    >Private gardens, open-air pavilions, and natural
+                    pools</span
+                  >
+                </div>
+              </li>
+              <li class="loc-feature">
+                <span class="loc-feature__icon" aria-hidden="true">🌾</span>
+                <div>
+                  <strong>Rice terrace views</strong>
+                  <span
+                    >Wake up to layers of emerald green cascading into the
+                    valley</span
+                  >
+                </div>
+              </li>
+              <li class="loc-feature">
+                <span class="loc-feature__icon" aria-hidden="true">🌊</span>
+                <div>
+                  <strong>Warm ocean nearby</strong>
+                  <span
+                    >Beach excursions to the Indian Ocean coastline, 45 min
+                    away</span
+                  >
+                </div>
+              </li>
+              <li class="loc-feature">
+                <span class="loc-feature__icon" aria-hidden="true">🛕</span>
+                <div>
+                  <strong>Sacred Balinese culture</strong>
+                  <span
+                    >Temple ceremonies, offerings, and spiritual
+                    traditions</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         6. GALLERY
+    ═══════════════════════════════════════ -->
+      <section
+        class="gallery section"
+        id="gallery"
+        aria-labelledby="gallery-title"
+      >
+        <div class="container">
+          <header
+            class="section__header reveal"
+            style="text-align: center; margin-inline: auto; max-width: 520px"
+          >
+            <span class="section__label">The retreat in images</span>
+            <h2 class="section__title" id="gallery-title">
+              Glimpses of<br />
+              <em>paradise</em>
+            </h2>
+          </header>
+
+          <div class="gallery__grid" role="list">
+            <figure
+              class="gallery__item gallery__item--wide reveal"
+              role="listitem"
+            >
+              <img
+                src="assets/villa.jpg"
+                alt="Morning yoga practice on an open-air deck overlooking the jungle"
+                loading="lazy"
+              />
+              <figcaption>Morning practice</figcaption>
+            </figure>
+            <figure class="gallery__item reveal" role="listitem">
+              <img
+                src="assets/yoga-02.jpg"
+                alt="Colourful nourishing plant-based meals on banana leaf"
+                loading="lazy"
+              />
+              <figcaption>Nourishing cuisine</figcaption>
+            </figure>
+            <figure class="gallery__item reveal" role="listitem">
+              <img
+                src="assets/yoga-03.jpg"
+                alt="Sunset over the Bali coastline with silhouette of palm trees"
+                loading="lazy"
+              />
+              <figcaption>Bali sunset</figcaption>
+            </figure>
+            <figure class="gallery__item reveal" role="listitem">
+              <img
+                src="assets/yoga-04.jpg"
+                alt="Emerald green rice terraces of Tegallalang Ubud"
+                loading="lazy"
+              />
+              <figcaption>Rice terraces</figcaption>
+            </figure>
+            <figure
+              class="gallery__item gallery__item--tall reveal"
+              role="listitem"
+            >
+              <img
+                src="assets/yoga.jpg"
+                alt="The retreat villa at dusk surrounded by lush vegetation"
+                loading="lazy"
+              />
+              <figcaption>Retreat villa</figcaption>
+            </figure>
+            <figure class="gallery__item reveal" role="listitem">
+              <img
+                src="assets/yoga-06.jpg"
+                alt="Sunset beach yoga session with the ocean behind"
+                loading="lazy"
+              />
+              <figcaption>Beach yoga</figcaption>
+            </figure>
+            <figure class="gallery__item reveal" role="listitem">
+              <img
+                src="assets/yoga-07.jpg"
+                alt="Sound healing ceremony with Balinese singing bowls"
+                loading="lazy"
+              />
+              <figcaption>Sound healing</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         7. BENEFITS
+    ═══════════════════════════════════════ -->
+      <section
+        class="benefits section"
+        id="benefits"
+        aria-labelledby="benefits-title"
+      >
+        <div class="container">
+          <header
+            class="section__header reveal"
+            style="text-align: center; margin-inline: auto; max-width: 540px"
+          >
+            <span class="section__label">What you will receive</span>
+            <h2 class="section__title" id="benefits-title">
+              The gifts of<br />
+              <em>seven days in Bali</em>
+            </h2>
+          </header>
+
+          <ul class="benefits__list" role="list">
+            <li class="benefit-card reveal">
+              <div class="benefit-card__icon" aria-hidden="true">🌸</div>
+              <h3 class="benefit-card__title">Deep Relaxation</h3>
+              <p class="benefit-card__desc">
+                Let go of stress and tension as the gentle pace of Bali and
+                daily practice melt away the weight of modern life.
+              </p>
+            </li>
+
+            <li class="benefit-card reveal">
+              <div class="benefit-card__icon" aria-hidden="true">💆</div>
+              <h3 class="benefit-card__title">Body Recovery</h3>
+              <p class="benefit-card__desc">
+                Nourishing movement, healing food, and rest restore energy, ease
+                chronic tension, and revitalise your physical body.
+              </p>
+            </li>
+
+            <li class="benefit-card reveal">
+              <div class="benefit-card__icon" aria-hidden="true">🧠</div>
+              <h3 class="benefit-card__title">Mental Clarity</h3>
+              <p class="benefit-card__desc">
+                Meditation and digital silence create space for insight,
+                perspective, and the quiet voice of your own inner wisdom.
+              </p>
+            </li>
+
+            <li class="benefit-card reveal">
+              <div class="benefit-card__icon" aria-hidden="true">🌿</div>
+              <h3 class="benefit-card__title">Nature Connection</h3>
+              <p class="benefit-card__desc">
+                Jungle mornings, waterfall ceremonies, and rice field walks
+                reawaken a fundamental human bond with the living world.
+              </p>
+            </li>
+
+            <li class="benefit-card reveal">
+              <div class="benefit-card__icon" aria-hidden="true">✨</div>
+              <h3 class="benefit-card__title">Healthy Inspiration</h3>
+              <p class="benefit-card__desc">
+                Leave with practical tools, recipes, and habits to continue your
+                wellness journey long after you return home.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         8. CALL TO ACTION
+    ═══════════════════════════════════════ -->
+      <section class="cta section" id="book" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta__card reveal">
+            <div class="cta__bg" aria-hidden="true">
+              <img src="assets/hero.jpg" alt="" loading="lazy" />
+              <div class="cta__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="cta__content">
+              <span
+                class="section__label"
+                style="color: rgba(255, 255, 255, 0.7)"
+                >Limited spots available</span
+              >
+              <h2 class="cta__title" id="cta-title">
+                Join our Bali<br />Yoga Retreat
+              </h2>
+              <p class="cta__desc">
+                Seven days of yoga, meditation, healing food, and tropical
+                nature await you. Spaces are intimate and intentionally small —
+                do not wait to claim yours.
+              </p>
+              <div class="cta__actions">
+                <a href="mailto:hello@baliyogaretreat.com" class="btn btn--warm"
+                  >Reserve Your Spot</a
+                >
+                <a
+                  href="mailto:hello@baliyogaretreat.com"
+                  class="btn btn--outline-light"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo" aria-hidden="true">✦</span>
+          <p class="footer__name">Bali Yoga Retreat</p>
+          <p class="footer__tagline">Ubud, Bali · Indonesia</p>
+        </div>
+
+        <nav class="footer__contact" aria-label="Contact links">
+          <a
+            href="mailto:hello@baliyogaretreat.com"
+            class="footer__link"
+            aria-label="Send us an email"
+          >
+            <span class="footer__link-icon" aria-hidden="true">✉</span>
+            hello@baliyogaretreat.com
+          </a>
+          <a
+            href="https://instagram.com/baliyogaretreat"
+            class="footer__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow us on Instagram"
+          >
+            <span class="footer__link-icon" aria-hidden="true">◈</span>
+            @baliyogaretreat
+          </a>
+          <a
+            href="https://wa.me/6281234567890"
+            class="footer__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Message us on WhatsApp"
+          >
+            <span class="footer__link-icon" aria-hidden="true">◎</span>
+            WhatsApp us
+          </a>
+        </nav>
+
+        <p class="footer__copy">
+          <span id="footer-year"></span> © Bali Yoga Retreat. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
