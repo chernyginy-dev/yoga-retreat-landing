@@ -1,6 +1,6 @@
-# Bali Yoga Retreat Landing Page
+# Yoga Retreat Landing Page
 
-A modern responsive landing page for a yoga retreat in Bali.
+A modern responsive landing page for a yoga retreat.
 Built as a portfolio project to demonstrate clean frontend development, responsive layouts, and visually engaging landing page design.
 
 🔗 **Live Demo:**
@@ -10,7 +10,7 @@ https://chernyginy-dev.github.io/yoga-retreat-landing/
 
 ## Overview
 
-This project represents a promotional landing page for a wellness and yoga retreat in Bali.
+This project represents a promotional landing page for a wellness and yoga retreat.
 The design focuses on a calm, minimal aesthetic with soft colors and imagery that reflects relaxation, mindfulness, and nature.
 
 The page structure highlights retreat experiences, activities, and key information while maintaining a smooth and intuitive user experience across devices.
@@ -40,7 +40,7 @@ The page structure highlights retreat experiences, activities, and key informati
 ## Project Structure
 
 ```
-BaliYogaRetreatLanding
+YogaRetreatLanding
 │
 ├── index.html
 ├── css/
